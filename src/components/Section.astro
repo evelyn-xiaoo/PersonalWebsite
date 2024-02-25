@@ -1,9 +1,17 @@
 ---
 import "../styles/custom.css"
 
+interface Props {
+    style: string;
+}
+
+const {
+    style,
+    ...rest
+} = Astro.props as Props;
 ---
 
-<div class="section white">
+<div class:list={["section", style]}>
     <slot>NO CONTENT :(</slot>
 </div>
 

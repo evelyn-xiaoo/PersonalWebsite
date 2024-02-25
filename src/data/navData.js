@@ -1,15 +1,15 @@
 const navData = [
     {
         name: "About Me",
-        path: "/AboutMe/",
+        path: "/aboutme/",
     },
     {
         name: "Projects",
-        path: "/Projects/",
+        path: "/projects/",
     },
     {
         name: "Resume",
-        path: "/Resume/",
+        path: "/resume/", 
     },
 ]
 

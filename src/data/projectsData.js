@@ -19,16 +19,6 @@ const projectsData = [
         id: "#Wordle",
         class: "wordle",
     },
-    {
-        name: "Wordle",
-        id: "#Wordle",
-        class: "wordle",
-    },
-    {
-        name: "Wordle",
-        id: "#Wordle",
-        class: "wordle",
-    },
 
 ]
 

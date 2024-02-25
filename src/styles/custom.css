@@ -144,7 +144,6 @@ Nav {
   flex-direction: row;
   justify-content: left;
   align-items: center;
-  overflow: scroll;
 }
 
 Footer {
@@ -170,6 +169,7 @@ Footer {
   color: white;
   font-size: medium;
 }
+
 
 .proj {
   font-size: 48px;
@@ -406,20 +406,29 @@ button:focus {
 
 .section {
   border-radius: 25px;
-  height: 87.5%;
-  width: 80%;
-  right: 2.5%;
-  bottom: 2.5%;
   position: absolute;
   overflow: scroll;
+  background-color: white;
+  bottom: 2.5%;
+}
+
+.aboutMeSection {
+  height: 85%;
+  width: 95%;
+  left: 2.5%;
+}
+
+.main {
+  height: 100%;
+  width: 95%;
+  left: 2.5%;
 }
 
 .projectSection {
   position: absolute;
-  height: 95%;
-  width: 105%;
-  left: -5%;
-  bottom: 0;
+  height: 82.5%;
+  width: 100%;
+  bottom: 0px;
 }
 
 .leftAboutMe {
@@ -478,7 +487,7 @@ button:focus {
 
 .rightAboutMe {
   position: absolute;
-  width: 70%;
+  width: 67.5%;
   height: 100%;
   right: 0px;
 }
