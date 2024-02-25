@@ -1,0 +1,26 @@
+---
+import MainHead from "./MainHead.astro";
+import Nav from "../components/Nav.astro"
+import Footer from "../components/Footer.astro";
+import Screen from "../components/Screen.astro";
+
+interface Props {
+    title: string;
+    description?: string;
+}
+
+const {
+    title = "Evelyn Xiao",
+    description = "My personal website demonstrating my projects"
+} = Astro.props as Props;
+---
+
+<html lang="en">
+    <MainHead {title} {description}/>
+    <body class="sidebyside">
+        <Nav/>
+        <Screen color="lightBlue">
+            <slot>empty!</slot>
+        </Screen>
+    </body>
+</html>

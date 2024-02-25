@@ -1,0 +1,45 @@
+---
+import "../styles/custom.css"
+import MainLayout from "../layouts/MainLayout.astro"
+import Puddle from "../layouts/Puddle.astro"
+import BigPuddle from "../../public/images/BigPuddle.png"
+import Button from "../components/Nav-Button.astro"
+---
+
+<MainLayout title="Evelyn Xiao">
+	<div class="Puddles">
+		<div class="BigPuddle">
+			<img src="/images/BigPuddle.png" alt="Big Puddle" height="900" width="1180">
+			<div class="left-aligned">
+				<h2 class="extra">
+					hi my name is
+				</h2>
+				<h1 class="name">
+					EVELYN XIAO
+				</h1>
+			</div>
+		</div>
+		<div class="right"> 
+			<div class="SmallPuddle">
+				<img src="/images/SmallPuddle.png" alt="Small Puddle">
+				<div class="cascade">
+					<h2 class="lefttop">
+						Computer Science major
+					</h2>
+					<h2 class="middle">
+						at
+					</h2>
+					<h2 class="bottomright">
+						Northeastern University
+					</h2>
+				</div>
+			</div>
+			<div class="MoreButton">
+				<a href="/AboutMe/">
+					<button class="learnmore">Learn More</button>
+				</a>
+			</div>
+				
+		</div>
+	</div>
+</MainLayout>

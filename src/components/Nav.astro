@@ -1,0 +1,31 @@
+---
+import { Icon } from "astro-icon/components";
+import "../styles/custom.css"
+
+import navData from "../../src/data/navData";
+import Link from "./Link.astro";
+import Footer from "./Footer.astro";
+---
+
+<nav aria-label="Primary">
+    <div class="nav-div">
+        <a href="/" class="logomark" aria-label="Restart">
+            <Icon name="logomark" width={200} height={200}/>
+        </a>
+        <ul class="navbar">
+            {navData.map((item) => 
+                <Link 
+                    text={item.name} 
+                    href={item.path} 
+                    style="primary"
+                    data-navLink
+                />
+            )}
+        </ul>
+    </div>
+    <Footer/>
+</nav>
+
+<script>
+    import "../js/nav.js"
+</script>

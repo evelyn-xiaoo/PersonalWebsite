@@ -1,0 +1,35 @@
+---
+import MainHead from "../../layouts/MainHead.astro";
+import Nav from "../../components/Nav.astro";
+import "../../styles/custom.css"
+import Screen from "../../components/Screen.astro"
+import ProjectsNav from "../../components/ProjectsNav.astro";
+import Section from "../../components/Section.astro";
+
+// component imports 
+
+interface Props {
+    title: string;
+    description?: string;
+}
+
+const {
+    title = "Projects",
+    description = "Personal projects by Evelyn Xiao"
+} = Astro.props as Props;
+---
+
+<html lang="en">
+    <MainHead {title} {description}/>
+    <body class="sidebyside">
+    <Nav/>
+    <Screen>
+        <ProjectsNav></ProjectsNav>
+        <div class="projectSection">
+            <Section>
+                hello
+            </Section>
+        </div>
+    </Screen>
+    </body>
+</html>

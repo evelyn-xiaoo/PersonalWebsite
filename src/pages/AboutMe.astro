@@ -1,0 +1,79 @@
+---
+import MainHead from "../layouts/MainHead.astro";
+import Nav from "../components/Nav.astro";
+import "../styles/custom.css"
+import Screen from "../components/Screen.astro"
+import PFPPuddle from "../../public/images/PFPPuddle.png"
+import Section from "../components/Section.astro"
+
+// component imports 
+
+interface Props {
+    title: string;
+    description?: string;
+}
+
+const {
+    title = "About Me",
+    description = "About Evelyn Xiao"
+} = Astro.props as Props;
+---
+
+<html lang="en">
+    <MainHead {title} {description}/>
+    <body class="sidebyside">
+    <Nav/>
+    <Screen color="lightBlue" class="sidebyside">
+        <div class="leftAboutMe">
+            <img src="/images/PFPPuddle.png" alt="Headshot" class="PFP">
+            <div >
+                <ul class="links">
+                    <li style="margin-bottom: 30px;">
+                        <a href="https://www.github.com/evelyn-xiaoo" target="_blank" class="weblink" >Github</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/evelynxiao" target="_blank" class="weblink">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="Info">
+                <img src="/images/InfoPuddle.png">
+                <div class="infoTextDiv">
+                    <p class="infoText">xiao.ev@northeastern.edu</p>
+                    <p class="infoText">267-441-0836</p>
+                </div>
+            </div>
+        </div>
+        <div class="rightAboutMe">
+            <h1 class="title">EVELYN XIAO</h1>
+            <Section>
+                <div class="stackParagraphs">
+                    <p>I am a computer science major at Northeastern University, 
+                        pursuing a Human-Centered Computing concentration. I wish 
+                        to obtain a web-development or mobile app development position 
+                        for both co-op and my future career as a developer. In regards 
+                        to my career, I have interests in creating prototypes for app and 
+                        website ideas. I have recently been creating projects in HTML, 
+                        CSS, and Swift to help me learn these new programming languages.</p>
+                    <p>Outside of computer science, I have many hobbies! Here are some of them: </p>
+                    <h3>LIFTING</h3>
+                    <p>I have been lifting since my senior year of high school, 
+                        wanting to stay in shape after completing track and field as a sprinter 
+                        and jumper for years. Fun fact, my max squat PR is 165lbs! </p>
+                    <h3>TRAVELING</h3>
+                    <p>I am grateful to have had the opportunity to travel to many places. 
+                        My favorites include Japan, Korea, Hong Kong (where my family is from!), Moab, and Alaska.
+                        I really hope to visit Greece, London, and Berlin some day.
+                    </p>
+                    <h3>PHOTOGRAPHY</h3>
+                    <p>I have a photography account on Instagram where I post photos taken with my Canon 80d DSLR and film camera during trips!
+                        
+                        Below I've included some of my favorites.
+                    </p>
+                    <img src="/images/PFPPuddle.png">
+                </div>
+            </Section>
+        </div>
+    </Screen>
+    </body>
+</html>

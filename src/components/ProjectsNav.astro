@@ -1,0 +1,23 @@
+---
+import "../styles/custom.css"
+
+import projectsData from "../../src/data/projectsData";
+import Proj from "./Proj.astro";
+---
+
+<nav class="projectsNav">
+        <ul class="projBar">
+            {projectsData.map((item) => 
+                <Proj 
+                    text={item.name} 
+                    id={item.id} 
+                    style={item.class}
+                    data-projsLink
+                />
+            )}
+        </ul>
+</nav>
+
+<script>
+    import "../js/projs.js"
+</script>

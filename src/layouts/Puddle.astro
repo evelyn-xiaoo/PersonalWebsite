@@ -1,0 +1,24 @@
+---
+const { img, imgName, size } = Astro.props
+import "../styles/custom.css"
+---
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{imgName}</title>
+    </head>
+    <body>
+        <div>
+            <img class={size} src={img} alt={imgName}>
+        </div>
+        <div>
+            <body>
+                <slot>
+                    info here
+                </slot>
+            </body>
+        </div>
+    </body>
+</html>

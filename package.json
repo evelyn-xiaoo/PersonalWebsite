@@ -1,0 +1,17 @@
+{
+  "name": "astro-personalwebsite",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@heroicons/vue": "^2.1.1",
+    "astro": "^4.0.7",
+    "astro-icon": "^1.1.0"
+  }
+}

@@ -1,0 +1,20 @@
+---
+interface Props {
+    text: string;
+    href: string;
+    style: "primary" | "selected";
+}
+
+const {
+    text,
+    href,
+    style,
+    ...rest
+} = Astro.props as Props;
+
+import "../styles/custom.css"
+---
+
+<a href={href} class:list={["link", style]} {...rest}>
+    <span>{text}</span>
+</a>
