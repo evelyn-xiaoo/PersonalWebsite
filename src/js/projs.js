@@ -1,10 +1,7 @@
 const projsLinks = document.querySelectorAll("[data-projsLink]");
 
 projsLinks.forEach((proj) => {
-    if(window.location.href.indexOf(proj.getAttribute("id")) == -1) {
-        proj.setAttribute("aria-current", proj.getAttribute("style"))
-    }
-    else {
+    if(proj.getAttribute("id") === window.location.hash) {
         proj.setAttribute("aria-current", "proj")
     }
 })

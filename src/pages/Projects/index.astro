@@ -1,10 +1,11 @@
 ---
 import MainHead from "../../layouts/MainHead.astro";
 import Nav from "../../components/Nav.astro";
-import "../../styles/custom.css"
-import Screen from "../../components/Screen.astro"
+import "../../styles/custom.css";
+import Screen from "../../components/Screen.astro";
 import ProjectsNav from "../../components/ProjectsNav.astro";
 import Section from "../../components/Section.astro";
+import Projects from "../../components/Projects.astro";
 
 // component imports 
 
@@ -25,10 +26,9 @@ const {
     <Nav/>
     <Screen>
         <ProjectsNav/>
-        <div class="projectSection">
-            <Section style="main">
-            </Section>
-        </div>
+        <Section style="projectSection">
+            <Projects></Projects>
+        </Section>
     </Screen>
     </body>
 </html>

@@ -1,0 +1,16 @@
+---
+
+import projectsData from "../../src/data/projectsData";
+import ProjectLayout from "../layouts/ProjectLayout.astro";
+---
+
+<div class="projectDiv">
+    {projectsData.map((item) => 
+        <ProjectLayout id={item.id}>
+            <slot name="visual"></slot>
+            <slot name="about"></slot>
+            <slot name="why"></slot>
+            <slot name="reflet"></slot>
+        </ProjectLayout>
+    )}
+</div>

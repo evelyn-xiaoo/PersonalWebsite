@@ -1,7 +1,6 @@
-@font-face {
-  font-family: "Hate Your Writing";
-  src: url(HateYourWriting.ttf);
-}
+/*
+idk what these do
+*/
 
 *,
 *::after,
@@ -16,9 +15,6 @@ nav :where(ol, ul) {
   list-style: none;
 }
 
-
-
-
 img,
 picture {
   width: 100%;
@@ -26,130 +22,8 @@ picture {
   display: block;
 }
 
-.name {
-  color: #223B61;
-  font-family: "Hate Your Writing";
-  font-size: 200px;
-}
-
-.extra {
-  color: #223B61;
-  font-family: "Hate Your Writing";
-  font-size: 64px;
-  letter-spacing: 14px;
-}
-
-h1 {
-  color: #223B61;
-  font-family: "Hate Your Writing";
-  font-size: 48px;
-}
-
-.title {
-  position: absolute;
-  font-size: 90px;
-  text-align: center;
-  width: 100%;
-  top: 0%
-}
-
-h3 {
-  color: #223B61;
-  font-family: "Hate Your Writing";
-  font-size: 40px;
-  text-align: left;
-}
-
-p {
-  color: black;
-  font-family: "Crimson Text";
-  font-size: 20px;
-  text-align: left;
-  margin-bottom: 3%;
-  line-height: 150%;
-}
-
-a .weblink:visited {
-  color:#223B61;
-}
-
-.weblink {
-  color: white;
-  text-align: left;
-  text-decoration: none;
-}
-
 body {
-    background: #223B61;
-}
-
-.stackParagraphs {
-  position: absolute;
-  width: 90%;
-  left: 5%;
-  top: 5%;
-  display: flex;
-  flex-direction: column;
-  height: 90%;
-  padding-bottom: 5%;
-}
-
-h2 {
-    color: white;
-    font-family: "Hate Your Writing";
-    font-size: 64px;
-    font-weight: 400;
-}
-
-Nav {
-  position: absolute;
-  height: 100%;
-  width: 15%;
-  margin-left: 1.5%;
-}
-
-.projectsNav {
-  position: absolute;
-  width: 97%;
-  height: 12.5%;
-  display: flex;
-  flex-direction: row;
-  left: 0px;
-  margin-top: 15px;
-  align-items: flex-start;
-  overflow-x: scroll;
-}
-
-.nav-div {
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  top: 20%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-
-.navbar {
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  top: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.projBar {
-  position: absolute;
-  width: max-content;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
+  background: #223B61;
 }
 
 Footer {
@@ -163,19 +37,450 @@ Footer {
   padding-bottom: 10px;
 }
 
-.center {
-  position: absolute;
-  margin: auto;
-  width: 50%;
-  top: 25%;
-}
-
-.link {
+button {
   font-family: "Crimson Text";
+  font-size: 40px;
+  width: fit-content;
   color: white;
-  font-size: medium;
+  background-color: transparent;
+  border: none;
+  left: 25%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  height: 400px;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
+/*
+text and section colors
+*/
+
+.name {
+  color: #223B61;
+  font-family: "Rock 3D";
+  font-size: 80px;
+}
+
+.extra {
+  color: #223B61;
+  font-family: "Crimson Text";
+  font-size: 40px;
+  letter-spacing: 20px;
+}
+
+.title {
+  position: absolute;
+  font-size: 90px;
+  text-align: center;
+  width: 100%;
+  top: 0%
+}
+
+h1 {
+  color: #223B61;
+  font-family: "Crimson Text";
+  font-size: 48px;
+}
+
+h2 {
+  color: white;
+  font-family: "Crimson Text";
+  font-size: 36px;
+  font-weight: 400;
+}
+
+h3 {
+  color: #223B61;
+  font-family: "Rock 3D";
+  font-size: 36px;
+  text-align: left;
+}
+
+p {
+  color: black;
+  font-family: "Crimson Text";
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 3%;
+  line-height: 150%;
+}
+
+.white {
+  background-color: white;
+  width: 90%;
+}
+
+.lightBlue {
+  background: #C0E1FF;
+}
+
+/*
+    COMPONENTS
+*/
+
+/*
+nav
+*/
+
+Nav {
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  margin-left: 1.5%;
+}
+
+.nav-div {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 20%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary {
+  font-family: "Crimson Text";
+  font-size: 32px;
+  width: fit-content;
+  color: white;
+  background-color: transparent;
+  border: none;
+  left: 25%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  height: 400px;
+  text-decoration: none;
+}
+
+.primary:hover {
+  text-decoration: none;
+}
+
+[aria-current="page"] {
+  font-family: "Rock 3D";
+  text-transform: uppercase;
+}
+
+/*
+showcase
+*/
+
+.showcase {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 3px solid red;
+}
+
+.visuals {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0px;
+  border: 3px solid orange;
+  padding: 2.5%;
+}
+
+.showcase .info {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0px;
+  border: 3px solid orange;
+  padding: 2.5%;
+}
+
+/*
+    PAGES
+*/
+
+/*
+index aka landing page
+
+left side: big puddle
+right side: small puddle and learn more button
+*/
+.Puddles {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+}
+
+.BigPuddle {
+  
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  display: grid;
+  left: -10%;
+}
+
+.BigPuddle > * {
+	grid-area: 1/1/1/1;
+}
+
+/**/
+
+.right {
+  position: absolute;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  order: 2;
+  right: 0px;
+}
+/**/
+.SmallPuddle {
+  display: grid;
+	align-items: center;
+	justify-items: center;
+  position: absolute;
+  top: 0px;
+  width: 80%;
+  height: max-content;
+  right: 5%;
+}
+
+.SmallPuddle > * {
+	grid-area: 1/1/1/1;
+}
+
+.cascade {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.lefttop {
+  position: relative;
+  width: fit-content;
+  top: 35%;
+  left: 10%;
+  font-size: 40px;
+}
+
+.middle {
+  position: relative;
+  width: fit-content;
+  top: 45%;
+  left: 50%;
+  font-size: 40px;
+}
+
+.bottomright {
+  position: relative;
+  width: fit-content;
+  top: 60%;
+  left: 30%;
+  font-size: 40px;
+}
+/**/
+
+.MoreButton {
+  position: absolute;
+  bottom: 0px;
+  height: 30%;
+  width: 70%;
+  left: 25%;
+  align-items: center;
+}
+
+.learnmore {
+  height: 100px;
+  position: absolute;
+  bottom: 25%;
+  appearance: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Crimson Text";
+  font-size: 45px;
+  margin: 0;
+  width: 400px;
+  padding: 16px 24px;
+  text-align: center;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  position: absolute;
+  left: 15%;
+}
+
+.learnmore:hover {
+  color: #C0E1FF;
+  letter-spacing: -5px;
+  font-family: "Rock 3D";
+  font-size: 48px;
+}
+
+.learnmore:enabled {
+  text-decoration: none;;
+}
+
+
+
+
+
+/*
+about me
+*/
+
+/*left side*/
+.leftAboutMe {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.PFP {
+  position: absolute;
+  width: 80%;
+  top: 5%;
+}
+
+.links {
+  position: absolute;
+  font-size: 28px;
+  font-family: "Crimson Text";
+  text-align: center;
+  left: 10%;
+  width: 90%;
+  top: 55%;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.weblink {
+  color: #223B61;
+  text-align: left;
+  text-decoration: none;
+}
+
+.weblink:hover {
+  text-decoration: underline;
+}
+
+a .weblink:visited {
+  color:#223B61;
+}
+
+.Info {
+  position: absolute;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+}
+
+.infoTextDiv {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.infoText {
+  color: white;
+  font-family: "Crimson Text";
+  font-size: 24px;
+}
+
+/*right about me*/
+.rightAboutMe {
+  position: absolute;
+  width: 67.5%;
+  height: 100%;
+  right: 0px;
+}
+
+.aboutMeSection {
+  height: 85%;
+  width: 95%;
+  left: 2.5%;
+}
+
+.stackParagraphs {
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  top: 5%;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  padding-bottom: 5%;
+}
+
+.slideshow {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.slideshow .text {
+  width: 100%;
+  top: 0px;
+}
+
+.slideshow .images {
+  position: absolute;
+  width: 40%;
+  bottom: 0px;
+}
+
+/*
+project
+*/
+
+.projectsNav {
+  position: absolute;
+  width: 97%;
+  height: 12.5%;
+  display: flex;
+  flex-direction: row;
+  left: 0px;
+  margin-top: 15px;
+  align-items: flex-start;
+  overflow-x: scroll;
+}
+
+.projBar {
+  position: absolute;
+  width: max-content;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
 
 .proj {
   font-size: 48px;
@@ -213,59 +518,67 @@ Footer {
   color: red;
 }
 
+.floodit {
+  font-family: "VT323";
+  color: #ffaaf4;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
 .wordle {
   font-family: "Helvetica Neue";
   color: green;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .website {
-  font-family: "Hate Your Writing";
-  font-size: 72px;
+  font-family: "Crimson Text";
+  font-size: 50px;
   color: #223B61;
-  line-height: 80%;
+  line-height: 125%;
 }
 
+[aria-current="proj"] {
+  box-shadow: inset 0px 5px 5px -2.5px rgba(0,0,0,0.57);
+  border: 3px solid red;
+}
 
+.projectSection {
+  position: absolute;
+  height: 82.5%;
+  width: 97%;
+  bottom: 0px;
+  border: 3px solid black;
+  left: 1.5%;
+}
 
-button {
-  font-family: "Hate Your Writing";
-  font-size: 48px;
-  width: fit-content;
+/*
+404
+*/
+
+.center {
+  position: absolute;
+  margin: auto;
+  width: 50%;
+  top: 25%;
+}
+
+.link {
+  font-family: "Crimson Text";
   color: white;
-  background-color: transparent;
-  border: none;
-  left: 25%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  height: 400px;
-  
+  font-size: medium;
 }
 
-button:hover {
-  cursor: pointer;
-}
 
-button:focus {
-  border-radius: 25px;
-  text-decoration: underline;
-}
 
-.primary {
-  font-family: "Hate Your Writing";
-  font-size: 48px;
-  width: fit-content;
-  color: white;
-  background-color: transparent;
-  border: none;
-  left: 25%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  height: 400px;
-  text-decoration: none;
-}
+
+
+
+
+
+
+
 
 .sidebyside {
   height: 100%;
@@ -283,122 +596,11 @@ button:focus {
   align-items: center;
 }
 
-.learnmore {
-  appearance: none;
-  background-color: transparent;
-  box-sizing: border-box;
-  color: white;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Hate Your Writing";
-  font-size: 64px;
-  margin: 0;
-  min-height: 60px;
-  min-width: 0;
-  padding: 16px 24px;
-  text-align: center;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-  touch-action: manipulation;
-  width: 200px;
-  will-change: transform;
-  height: 100%;
-  position: absolute;
-  left: 20%;
-}
 
-.learnmore:disabled {
-  pointer-events: none;
-}
 
-.learnmore:hover {
-  color: #223B61;
-  letter-spacing: 14px;
-  background-color: #C0E1FF;
-  border-radius: 100px;
-  height: min-content;
-  width: 400px;
-  text-align: center;
-  position: absolute;
-  left: 15%;
-}
 
-.learnmore:active {
-  color: #C0E1FF;
-  color: transparent;
-}
 
-.MoreButton {
-  position: absolute;
-  bottom: 5%;
-  height: 11.5%;
-  width: 70%;
-  left: 25%;
-}
 
-.Puddles {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-}
-
-.BigPuddle {
-  
-  align-items: center;
-  justify-items: center;
-  position: absolute;
-  display: grid;
-  left: -10%;
-}
-
-.BigPuddle > * {
-	grid-area: 1/1/1/1;
-}
-
-.right {
-  position: absolute;
-  align-items: center;
-  height: 100%;
-  width: 50%;
-  order: 2;
-  right: 0px;
-}
-
-.SmallPuddle {
-  display: grid;
-	align-items: center;
-	justify-items: center;
-  position: absolute;
-  top: 0px;
-  width: 80%;
-  height: max-content;
-  right: 5%;
-}
-
-.SmallPuddle > * {
-	grid-area: 1/1/1/1;
-}
-
-.cascade {
-  text-align: center;
-  width: 80%;
-  position: relative;
-}
-
-.learnmore {
-  width: 300px;
-  height: max-content;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-}
-
-[aria-current="page"] {
-  text-decoration-line: underline;
-}
-
-[aria-current="proj"] {
-  box-shadow: inset 0px 5px 5px -2.5px rgba(0,0,0,0.57);
-}
 
 .screen {
   border-radius: 25px;
@@ -418,123 +620,17 @@ button:focus {
   bottom: 2.5%;
 }
 
-.aboutMeSection {
-  height: 85%;
-  width: 95%;
-  left: 2.5%;
-}
-
-.main {
-  height: 100%;
-  width: 95%;
-  left: 2.5%;
-}
-
-.projectSection {
-  position: absolute;
-  height: 82.5%;
-  width: 100%;
-  bottom: 0px;
-}
-
-.leftAboutMe {
-  position: absolute;
-  width: 35%;
-  height: 100%;
-  left: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.PFP {
-  position: absolute;
-  width: 80%;
-  top: 5%;
-}
-
-.links {
-  position: absolute;
-  font-size: 28px;
-  font-family: "Crimson Text";
-  text-align: center;
-  left: 10%;
-  width: 90%;
-  top: 55%;
-  font-weight: bold;
-  list-style-type: none;
-}
-
-.Info {
-  position: absolute;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  bottom: 20px;
-}
-
-.infoTextDiv {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.infoText {
-  color: white;
-  font-family: "Crimson Text";
-  font-size: 24px;
-}
-
-.rightAboutMe {
-  position: absolute;
-  width: 67.5%;
-  height: 100%;
-  right: 0px;
-}
-
-.aboutMeInfo {
-  height: 30%;
-  position: absolute;
-  top: 10%;
-}
-
-.showcase {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-}
-
-.showcase .text {
-  width: 100%;
-  top: 0px;
-}
-
-.showcase .images {
-  position: absolute;
-  width: 40%;
-  bottom: 0px;
-}
-
-.white {
-  background-color: white;
-  width: 90%;
-}
-
-.lightBlue {
-  background: #C0E1FF;
-}
 
 
 
+
+
+
+
+
+/*
+resume
+*/
 
 .resumeLayout {
   position: absolute;
@@ -542,7 +638,6 @@ button:focus {
   height: 100%;
 
 }
-
 
 .resume {
   height: 95%;
@@ -553,16 +648,20 @@ button:focus {
   position: absolute;
 }
 
+/* right side */
+
 .contactMe {
   position: absolute;
   width: 45%;
   right: 1.5%;
   top: 20%;
   display: flex;
-  		flex-direction: column;
-  		justify-content: center;
-  		align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+/* form */
 
 .form {
   position: absolute;
@@ -578,8 +677,8 @@ button:focus {
 
 .form .title {
   position: absolute;
-  top: 0px;
-  font-size: 48px;
+  top: 10px;
+  font-size: 28px;
   text-transform: uppercase;
 }
 
@@ -601,18 +700,19 @@ button:focus {
 }
 
 label {
-  font-family: "Hate Your Writing";
+  font-family: "Crimson Text";
   color: #223B61;
-  font-size: 40px;
+  font-size: 28px;
   position: absolute;
   text-align: left;
   left: 5px;
   width: 20%;
+  top: 5px;
 } 
 
 .msg {
   position: absolute;
-  top: 37%;
+  top: 38.5%;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -649,13 +749,13 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 40px;
-  font-family: "Hate Your Writing";
+  font-size: 30px;
+  font-family: "Crimson Text";
   bottom: 0px;
   position: absolute;
   width: max-content;
   text-align: center;
-  left: 40%;
+  left: 35%;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -669,4 +769,12 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: transparent;
   padding: 20px;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .Puddles {
+    flex-direction: column;
+    align-items: center;
+  }
 }

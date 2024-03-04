@@ -1,0 +1,23 @@
+---
+import "../styles/custom.css"
+
+const {id} = Astro.props;
+---
+
+<div class="showcase" id={id}>
+    <div class="visuals">
+        <span slot="visuals">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width: 100%; height: 100%;" 
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FINsOrywF8Uyl0HmHbtVhtM%2FPersonal-Website%3Ftype%3Ddesign%26node-id%3D449%253A18%26mode%3Ddesign%26t%3DSbKrtYmIkZvDJPwC-1" 
+            allowfullscreen></iframe>
+        </span>
+    </div>
+    <div class="info">
+        <h3>About this project</h3>
+        <span slot="about">about information</span>
+        <h3>Why</h3>
+        <span slot="why">why information</span>
+        <h3>Reflection</h3>
+        <span slot="reflect">reflection information</span>
+    </div>
+</div>
